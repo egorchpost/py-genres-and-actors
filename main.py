@@ -10,7 +10,7 @@ def main() -> QuerySet[Actor, Actor]:
         ("Dramma",),
     ]
 
-    for genre in genres:
+    for genre, in genres:
         Genre.objects.create(name=genre)
 
     actors = [
